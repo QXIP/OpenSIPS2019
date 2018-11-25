@@ -32,7 +32,7 @@ if (empty($_POST["message"])) {
 }
 
 
-$EmailTo = "email@gmail.com";
+$EmailTo = "summit@opensips.org";
 $Subject = "New Message Received";
 
 // prepare email body text
