@@ -2138,14 +2138,14 @@ a.back-to-top:hover, a.back-to-top:focus {
   letter-spacing: 0.1rem;
   margin-top: 30px;
   text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;  
 }
 
 #main-slide .carousel-item .carousel-caption p {
-  font-size: 20px;
+  font-size: 50px;
 }
 
 #main-slide .carousel-item.active .carousel-caption {
