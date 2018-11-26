@@ -2134,28 +2134,17 @@ a.back-to-top:hover, a.back-to-top:focus {
 #main-slide .carousel-item .carousel-caption .heading {
   font-size: 80px;
   font-weight: 700;
-  color: #fff;
+  color: #0a0a0a;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   margin-top: 30px;
-  text-shadow:
-    -3px -3px 0 #000,
-    3px -3px 0 #000,
-    -3px 3px 0 #000,
-    3px 3px 0 #000;  
+   
 }
 
 #main-slide .carousel-item .carousel-caption p {
-  font-size: 50px;
-  text-shadow: /* Outline */ 
-    -1px -1px 0 #000000, 
-    1px -1px 0 #000000, 
-    -1px 1px 0 #000000, 
-    1px 1px 0 #000000, 
-    -2px 0 0 #000000, 
-    2px 0 0 #000000, 
-    0 2px 0 #000000, 
-    0 -2px 0 #000000;
+  font-size: 40px;
+  font-weight: bold;
+  
 }
 
 #main-slide .carousel-item.active .carousel-caption {
@@ -2165,7 +2154,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #main-slide .carousel-caption {
-  color: #fff;
+  color: #0a0a0a;
   position: absolute;
   top: 35%;
 }
