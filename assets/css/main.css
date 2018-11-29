@@ -61,7 +61,7 @@ ul li, ol li {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   line-height: 70px;
   letter-spacing: 0.1rem;
 }
@@ -174,7 +174,7 @@ ul li, ol li {
 .inner-title {
   font-size: 24px;
   font-weight: 700;
-  text-tranform: capitalize;
+  /* text-tranform: capitalize; */
 }
 
 .page-tagline {
@@ -249,7 +249,7 @@ ul li, ol li {
 
 .btn-rm {
   padding: 7px 10px;
-  text-transform: capitalize;
+ /* text-transform: capitalize; */
 }
 
 button:focus {
@@ -1038,7 +1038,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #848484;
   line-height: 16px;
   font-weight: 400;
-  text-transform: capitalize;
+ /* text-transform: capitalize; */
 }
 
 .schedule .schedule-tab-content .tab-content {
