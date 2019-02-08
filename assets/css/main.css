@@ -2015,6 +2015,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   background: #ffffff;
   padding: 30px;
+  min-height: 101%;
 }
 
 #pricing .price-block-wrapper .icon {
