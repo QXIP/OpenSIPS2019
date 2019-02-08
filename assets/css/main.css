@@ -966,11 +966,11 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #sponsors .spnsors-logo {
   text-align: center;
-  border-radius: 4px;
+  border-radius: 24px;
   padding: 50px;
   margin-bottom: 30px;
   display: inline-block;
-  border: 1px solid #ddd;
+  border: 6px solid #abcc42;
   background: #fff;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
