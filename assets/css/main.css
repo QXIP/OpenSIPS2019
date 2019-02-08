@@ -959,6 +959,9 @@ a.back-to-top:hover, a.back-to-top:focus {
 /* Sponsors Area */
 #sponsors {
   background: url(../img/slider/summit1.png);
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
 }
 
 #sponsors .spnsors-logo {
