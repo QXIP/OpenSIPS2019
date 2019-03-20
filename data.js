@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		       <div class="mu-single-speakers-info">
                         <h3>
                          ${item.NAME}
-                         <a href="item.TWITTER" target="_blank" tabindex="0"><i :class="${item.TWITTER}"></i></a>
+                         <a href="item.TWITTER" target="_blank" tabindex="0"><i class="${item.TWITTER}"></i></a>
                         </h3>
 			<h6>${item.COMPANY}</h6>
 		 	<p>${item.POSITION}</p>
