@@ -99,3 +99,10 @@ var summitData = {
     ]
  };
   
+// Append to Document element id `speakers`
+document.getElementById('speakers').appendChild(html`
+  <ul>${summitData.SPEAKERS.map(text => html`
+    <li>NAME: ${text.NAME}</li>
+  `)}
+  </ul>
+`);
