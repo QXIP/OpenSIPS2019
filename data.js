@@ -100,11 +100,12 @@ var summitData = {
  };
   
 // Append to Document element id `speakers`
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function(event) { 
+   //do work
    document.getElementById('speakers').appendChild(html`
      <ul>${summitData.SPEAKERS.map(text => html`  
        <li>NAME: ${text.NAME}</li>
      `)}
      </ul>
    `);
-});
+});   
