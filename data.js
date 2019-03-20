@@ -102,6 +102,7 @@ var summitData = {
 // Append to Document element id `speakers`
 document.addEventListener("DOMContentLoaded", function(event) { 
    //do work
+   const {render, html, svg} = lighterhtml;
    document.getElementById('speakers').appendChild(html`
      <ul>${summitData.SPEAKERS.map(text => html`  
        <li>NAME: ${text.NAME}</li>
