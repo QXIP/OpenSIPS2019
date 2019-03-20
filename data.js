@@ -118,14 +118,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
           <ul class="slides">
                   ${summitData.SPEAKERS.map(item => html`  
                    <li>
-                     <img src="item.TEXTIMG" alt="item.NAME" style="width:200px;height:200px;"/>
+                     <img src="${item.TEXTIMG}" alt="${item.NAME}" style="width:200px;height:200px;"/>
 		       <div class="mu-single-speakers-info">
                         <h3>
-                         {{item.NAME}}
-                         <a href="item.TWITTER" target="_blank" tabindex="0"><i :class="item.TWITTERclass"></i></a>
+                         ${item.NAME}
+                         <a href="item.TWITTER" target="_blank" tabindex="0"><i :class="${item.TWITTER}"></i></a>
                         </h3>
-			<h6>{{item.COMPANY}}</h6>
-		 	<p>{{item.POSITION}}</p>
+			<h6>${item.COMPANY}</h6>
+		 	<p>${item.POSITION}</p>
                      </div>	
                    </li>
                  `)}
