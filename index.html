@@ -45,9 +45,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!--Favicon-->
     <link rel="shortcut icon" href="assets/img/favicon.png">
 
-        
-    <!-- jQuery library -->
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- slider -->
     <link href="http://www.opensips.org/events/Summit-2018Amsterdam/assets/css/flexslider.css">
 
@@ -1499,6 +1496,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
     <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBNlPwtPyZpzV-mA1Vt2F3d8Mv0agIlE_s"></script>
-      
+    <script src="http://www.opensips.org/events/Summit-2018Amsterdam/assets/js/jquery.flexslider-min.js"></script>
+	<script>
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: true,
+                controlNav: false,
+                slideshow: false,
+                itemWidth: 280,
+                itemMargin: 5
+            });
+        });
+    </script>
+  
   </body>
 </html>
