@@ -140,10 +140,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	 </div>
     </div>`);
 
-/*
+
    // Dynamic Tabs
    document.getElementById('myTabDynamic').appendChild(html`
-     <ul class="nav nav-tabs" id="myTabDynamicIn" role="tablist">       
+     <ul class="nav nav-tabs" role="tablist">       
      ${summitData.schedule.map(item => html`
       <li class="nav-item">
         <a class="nav-link ${item.active}" id="${item.id}-tab" data-toggle="tab" href="#${item.id}" role="tab" aria-controls="${item.id}" aria-expanded="true">
@@ -156,8 +156,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
      `)} 
      </ul>
    `);
-*/
+
 	
+/*
    // Dynamic Content 
    document.getElementById('myTabContentDynamic').appendChild(html`  
      ${summitData.schedule.map(item => html`
@@ -167,8 +168,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
               </div>
      `)}
    `);
-
-
+*/
 
 });   
 
