@@ -17,6 +17,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
    gtag('config', 'UA-47615177-4');
    </script>
+    
+   <!-- lighterhtml -->
+   <script src="https://unpkg.com/lighterhtml"></script>
+   <script src="data.js"></script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -40,6 +44,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <!--Favicon-->
     <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!-- slider -->
+    <link rel="stylesheet" href="assets/css/flexslider.css">
+
+<!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
     
 
   </head>
@@ -80,10 +92,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   Schedule
                 </a>
               </li>
-             <!-- <li class="nav-item">
+             <li class="nav-item">
                 <a class="nav-link" href="#team">
                   Speakers
-                </a> -->
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#gallery">
@@ -746,8 +758,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
     <!-- Schedule Section End -->
 
+
     <!-- Team Section Start -->
-    
+    <section id="team" class="section-padding">
+    </section>
+
     <!-- Team Section End -->
 
     <!-- Gallary Section Start -->
@@ -1488,7 +1503,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
+    <script src="assets/js/jquery.flexslider-min.js"></script>
+	<script>
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: true,
+                controlNav: false,
+                slideshow: false,
+                itemWidth: 280,
+                itemMargin: 5
+            });
+        });
+    </script>
     <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBNlPwtPyZpzV-mA1Vt2F3d8Mv0agIlE_s"></script>
-      
+  
   </body>
 </html>
