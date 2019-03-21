@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	 </div>
     </div>`);
 
-/*
+
    // Dynamic Tabs
    document.getElementById('myTabDynamic').appendChild(html`  
      ${summitData.schedule.map(item => html`
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
      `)} 
    `);
 
-
+/*
    // Dynamic Content 
    document.getElementById('myTabContentDynamic').appendChild(html`  
      ${summitData.schedule.map(item => html`
