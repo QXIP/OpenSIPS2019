@@ -154,13 +154,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
      `)} 
    `);
 
-   /* Dynamic Content */
+/*
+   // Dynamic Content 
    document.getElementById('myTabContentDynamic').appendChild(html`  
      ${summitData.schedule.map(item => html`
               <div class="tab-pane fade show active" id="${item.id}" role="tabpanel" aria-labelledby="${item.id}-tab">
                 <div id="accordion">
 
-		/*
+		
 		  ${item.items.map(card => html`
                     <div class="card">
                     <div id="headingOne">
@@ -175,12 +176,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
                     </div>
                   </div>
 		`)}
-		*/
 
                 </div> 
               </div>
      `)}
    `);
+*/
 
 
 });   
