@@ -72,7 +72,7 @@ var summitData = {
    
    "schedule": [ 
       { "id": "Tuesday",
-        "text": "Some Date"
+        "text": "Some Date",
         "active": "active",
         "items": [ 
           { "time": "8:30-9:30", 
