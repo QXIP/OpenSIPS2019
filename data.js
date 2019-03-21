@@ -71,8 +71,9 @@ var summitData = {
    ],
    
    "schedule": [ 
-      { "id": "first-day",
-        "active": "in active",
+      { "id": "Tuesday",
+        "text": "Some Date"
+        "active": "active",
         "items": [ 
           { "time": "8:30-9:30", 
             "description": "Registration & Breakfast", 
@@ -112,9 +113,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
    `);
    */
    
-   document.getElementById('team').appendChild(html`
-     
-<div class="container">
+   document.getElementById('team').appendChild(html`  
+   <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="clearfix">
@@ -124,10 +124,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
                  				  <li>
                     				 <img src="${item.TEXTIMG}" alt="${item.NAME}" style="width:200px;height:200px;"/>
 		     				  <div class="mu-single-speakers-info">
-                     				   <h3>
+                     				   <h4>
                        				  ${item.NAME}
                       				   <a href="item.TWITTER" target="_blank" tabindex="0"><i class="${item.TWITTER}"></i></a>
-                     				   </h3>
+                     				   </h4>
 						<h6>${item.COMPANY}</h6>
 		 				<p>${item.POSITION}</p>
                     			 	 </div>	
@@ -138,9 +138,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
      			 </div>
 		 </div>
 	 </div>
- </div>
-
+    </div>`);
+	
+   // Dynamic Tabs	
+   document.getElementById('myTabDynamic').appendChild(html`  
+     ${summitData.schedule.map(item => html`
+      <li class="nav-item">
+        <a class="nav-link ${item.active}" id="${item.id}-tab" data-toggle="tab" href="#${item.id}" role="tab" aria-controls="${item.id}" aria-expanded="true">
+            <div class="item-text">
+                <h4>${item.id}</h4>
+                <h5>${item.text}</h5>
+            </div>
+        </a>
+      </li>
       `);
+   `);
+
 
 });   
 
