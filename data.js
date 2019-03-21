@@ -128,8 +128,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                        				  ${item.NAME}
                       				   <a href="item.TWITTER" target="_blank" tabindex="0"><i class="${item.TWITTER}"></i></a>
                      				   </h4>
-						<h6>${item.COMPANY}</h6>
-		 				<p>${item.POSITION}</p>
+						<h6 style="color: #777777">${item.COMPANY}</h6>
+		 				<p style="color: #ABCC42">${item.POSITION}</p>
                     			 	 </div>	
                   				 </li>
                 					 `)}
