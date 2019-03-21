@@ -30,7 +30,7 @@ var summitData = {
          "TEXTTITLE":"Razvan Crainea",
          "COMPANY":"OpenSIPS Solutions",
          "DESC":"Open-source hacker, one of the core developers of the OpenSIPS project since 2010.",
-         "TWITTER":"",
+         "TWITTER":"https://twitter.com/@razvancrainea",
          "POSITION":""
       },
        {
@@ -63,7 +63,7 @@ var summitData = {
          "TEXTTITLE":"Marvi Benedet",
          "COMPANY":"Insiel S.p.A.",
          "DESC":"46 years old, electronic eng. working in Insiel since 2002. Involved in VoIP in the last 4 years in a little but very efficent working group. Very interested in evolutions of telephony.",
-         "TWITTER":"twitter.com/qxip",
+         "TWITTER":"twitter.com",
          "POSITION":""
       },
       
