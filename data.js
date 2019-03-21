@@ -164,24 +164,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
               <div class="tab-pane fade show active" id="${item.id}" role="tabpanel" aria-labelledby="${item.id}-tab">
                 <div id="accordion">
 		  ${item.items.map(card => html`<p>${card.description}</p>`)}
-
-		  /*
-		  ${item.items.map(card => html`
-                    <div class="card">
-                    <div id="headingOne">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <div class="images-box">
-                          <img class="img-fluid" src="${card.icon}" alt="">
-                        </div>                    
-                        <span class="time">${card.time}</span>
-                        <h4>${card.description}</h4>
-                        <h5 class="name">OpenSIPS Summit 2019</h5>
-                      </div>
-                    </div>
-                  </div>
-		  `)}
-		  */
-
                 </div> 
               </div>
      `)}
