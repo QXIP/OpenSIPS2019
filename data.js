@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
    //do work
    const {render, html, svg} = lighterhtml;
    /*
-   document.getElementById('speakers').appendChild(html`
+   document.getElementById('team').appendChild(html`
      <ul>${summitData.SPEAKERS.map(text => html`  
        <li>NAME: ${text.NAME}</li>
      `)}
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
    `);
    */
    
-   document.getElementById('speakers').appendChild(html`
+   document.getElementById('team').appendChild(html`
       <div class="clearfix">
         <div class="flexslider carousel">
           <ul class="slides">
