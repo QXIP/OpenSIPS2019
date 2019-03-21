@@ -162,10 +162,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
    document.getElementById('myTabContentDynamic').appendChild(html`  
      ${summitData.schedule.map(item => html`
               <div class="tab-pane fade show active" id="${item.id}" role="tabpanel" aria-labelledby="${item.id}-tab">
-                <div id="accordion">
-		  ${item.items.map(card => html`
-			<p>${card.description}</p>
-		  `)}
+                <div id="accordion" id="${item.id}-accordion">
                 </div> 
               </div>
      `)}
