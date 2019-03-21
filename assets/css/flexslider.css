@@ -171,10 +171,10 @@ html[xmlns] .flexslider .slides {
             background: #8aa926;
         }
         .flex-direction-nav .flex-prev {
-            left: 0px;
+            left: -65px;
         }
 .flex-direction-nav .flex-next {
-  right: 0px;
+  right: -65px;
   text-align: center;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
