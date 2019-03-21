@@ -163,7 +163,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
      ${summitData.schedule.map(item => html`
               <div class="tab-pane fade show active" id="${item.id}" role="tabpanel" aria-labelledby="${item.id}-tab">
                 <div id="accordion">
-		  ${item.items.map(card => html`<p>${card.description}</p>`)}
+		  ${item.items.map(card => html`
+			<p>${card.description}</p>
+		  `)}
                 </div> 
               </div>
      `)}
