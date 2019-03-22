@@ -253,6 +253,17 @@ var summitData = {
          "TWITTER":"",
          "POSITION":""
       },
+      {
+         "NAME":"Vlad Patrascu",
+         "SPEECHTITLE":"",
+         "SPEECHABSTRACT":"",
+         "TEXTIMG":"https://pbs.twimg.com/profile_images/966459074408787968/ZR8l--Wa_400x400.jpg",
+         "TEXTTITLE":"Vlad Patrascu",
+         "COMPANY":"OpenSIPS Solutions",
+         "DESC":"",
+         "TWITTER":"",
+         "POSITION":"Senior Developer"
+      },
 
    ],
    
