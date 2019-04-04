@@ -301,15 +301,6 @@ var summitData = {
 document.addEventListener("DOMContentLoaded", function(event) { 
    //do work
    const {render, html, svg} = lighterhtml;
-   /*
-   document.getElementById('team').appendChild(html`
-     <ul>${summitData.SPEAKERS.map(text => html`  
-       <li>NAME: ${text.NAME}</li>
-     `)}
-     </ul>
-   `);
-   */
-   
    document.getElementById('team').appendChild(html`  
    <div class="container">
 	<div class="row">
@@ -329,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		 				<p style="color: #ABCC42">${item.POSITION}</p>
                     			 	 </div>	
                   				 </li>
-                					 `)}
+                			  `)}
          				  </ul>
        				  </div>
      			 </div>
@@ -337,72 +328,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	 </div>
     </div>`);
 
-document.getElementById('presentations').appendChild(html`  
-   <div id="accordion4">   
-         ${summitData.SPEAKERS.map(item => html`  
-                <div class="card">
-                    <div id="heading${item.NAME}">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse${item.NAME}">
-                        <div class="images-box">
-                          <img class="img-fluid" src="${item.TEXTIMG}" alt="${item.NAME}">
-                        </div>                    
-                        <h4 class="name"> ${item.NAME} </h4>
-                        <h5 class="name">${item.SPEECHTITLE}</h5>
-                      </div>
-                    </div>
-	            <div id="collapse${item.TEXTIMG}" class="collapse" aria-labelledby="heading${item.NAME}" data-parent="#accordion4">
-                      <div class="card-body">
-                        <p>${item.SPEECHABSTRACT}</p> 
-		      </div>
-		    </div>
-		</div>
-         `)}
+    document.getElementById('presentations').appendChild(html`  
+	   <div id="accordion4">   
+		 ${summitData.SPEAKERS.map(items => html`  
+			<div class="card">
+			    <div id="heading${items.NAME}">
+			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse${items.NAME}">
+				<div class="images-box">
+				  <img class="img-fluid" src="${items.TEXTIMG}" alt="${items.NAME}">
+				</div>                    
+				<h4 class="name"> ${items.NAME} </h4>
+				<h5 class="name">${items.SPEECHTITLE}</h5>
+			      </div>
+			    </div>
+			    <div id="collapse${items.TEXTIMG}" class="collapse" aria-labelledby="heading${items.NAME}" data-parent="#accordion4">
+			      <div class="card-body">
+				<p>${items.SPEECHABSTRACT}</p> 
+			      </div>
+			    </div>
+			</div>
+		 `)}
     </div>`);	
-	
-/*
-   // Dynamic Tabs
-   document.getElementById('myTabDynamic').appendChild(html`  
-     ${summitData.schedule.map(item => html`
-      <li class="nav-item">
-        <a class="nav-link ${item.active}" id="${item.id}-tab" data-toggle="tab" href="#${item.id}" role="tab" aria-controls="${item.id}" aria-expanded="true">
-            <div class="item-text">
-                <h4>${item.id}</h4>
-                <h5>${item.text}</h5>
-            </div>
-        </a>
-      </li>
-     `)} 
-   `);
-
-
-   // Dynamic Content 
-   document.getElementById('myTabContentDynamic').appendChild(html`  
-     ${summitData.schedule.map(item => html`
-              <div class="tab-pane fade show active" id="${item.id}" role="tabpanel" aria-labelledby="${item.id}-tab">
-                <div id="accordion">
-
-		
-		  ${item.items.map(card => html`
-                    <div class="card">
-                    <div id="headingOne">
-                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <div class="images-box">
-                          <img class="img-fluid" src="${card.icon}" alt="">
-                        </div>                    
-                        <span class="time">${card.time}</span>
-                        <h4>${card.description}</h4>
-                        <h5 class="name">OpenSIPS Summit 2019</h5>
-                      </div>
-                    </div>
-                  </div>
-		`)}
-
-                </div> 
-              </div>
-     `)}
-   `);
-*/
-
 
 });   
 
