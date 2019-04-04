@@ -300,6 +300,7 @@ const summitData = {
 // Append to Document element id `speakers`
 document.addEventListener("DOMContentLoaded", function(event) { 
    //do work
+   var data = summitData;
    const {render, html, svg} = lighterhtml;
    document.getElementById('team').appendChild(html`  
    <div class="container">
@@ -308,7 +309,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<div class="clearfix">
        				 <div class="flexslider carousel">
         				  <ul class="slides">
-               				   ${summitData.SPEAKERS.map(item => html`  
+               				   ${data.SPEAKERS.map(item => html`  
                  				  <li>
                     				 <img src="${item.TEXTIMG}" alt="${item.NAME}" style="width:200px;height:200px;"/>
 		     				  <div class="mu-single-speakers-info">
@@ -332,10 +333,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // Append to Document element id `speakers`
 document.addEventListener("DOMContentLoaded", function(event) { 
    //do work	
+    var data = summitData;
     const {render, html, svg} = lighterhtml;
     document.getElementById('presentations').appendChild(html`  
 	   <div id="accordion4">   
-		 ${summitData.SPEAKERS.map(items => html`  
+		 ${data.SPEAKERS.map(items => html`  
 			<div class="card">
 			    <div id="heading${items.NAME}">
 			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse${items.NAME}">
