@@ -1,4 +1,4 @@
-var summitData = {
+const summitData = {
    "SPEAKERS":[
       {
          "NAME":"Saúl Ibarra Corretgé",
@@ -327,7 +327,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		 </div>
 	 </div>
     </div>`);
+});
 
+// Append to Document element id `speakers`
+document.addEventListener("DOMContentLoaded", function(event) { 
+   //do work	
     document.getElementById('presentations').appendChild(html`  
 	   <div id="accordion4">   
 		 ${summitData.SPEAKERS.map(items => html`  
