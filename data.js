@@ -1,5 +1,5 @@
 const summitData = {
-   "SPEAKERS":[
+     "SPEAKERS":[
       {
          "NAME":"Saúl Ibarra Corretgé",
          "SPEECHTITLE":"Going mobile with React Native and WebRTC",
@@ -114,7 +114,7 @@ const summitData = {
          "NAME":"Nitish Mahajan",
          "SPEECHTITLE":"Telecommunication in India a survey and Predictive capacity estimation for VoIP.",
          "SPEECHABSTRACT":"The talk covers three aspects: A. Current scenario and opportunities for telecommunication technologies in India B. Government initiatives and investments in the same C. Work being carried out at Telecommunications lab, Panjab University, Chandigarh, India(Software and Predictive Model Development)",
-         "TEXTIMG":"assets/img/speaker/no-img.jpg",
+         "TEXTIMG":"assets/img/speaker/nitish-mahajan.jpg",
          "TEXTTITLE":"Nitish Mahajan",
          "COMPANY":"Panjab University, Chandigarh, India.",
          "DESC":"",
@@ -213,7 +213,7 @@ const summitData = {
          "NAME":"Ameed Jamous",
          "SPEECHTITLE":"How TelecomsXChange was built using Open-Source Software ?",
          "SPEECHABSTRACT":"TelecomXChange is the first open wholesale telecom trading & interconnect platform built using open-source software. The platform allows you to interconnect via SIP to hundreds of carriers in minutes, no contracts, no commissions.",
-         "TEXTIMG":"assets/img/speaker/ameed-jamous.jpeg",
+         "TEXTIMG":"assets/img/speaker/ameed-jamous.png",
          "TEXTTITLE":"Ameed Jamous",
          "COMPANY":"TelecomsXChange",
          "DESC":"Telecom Entrepreneur, Founder and CTO @ Telecomsxchange Platform. Partner and Tech Evangelist @TeleStax The Restcomm Company.",
@@ -222,14 +222,14 @@ const summitData = {
       },
       {
          "NAME":"Celeste Mangani",
-         "SPEECHTITLE":"Business and OpenSource",
+         "SPEECHTITLE":"OPEN-SOURCE. What if you succeed? Reverse engineering a Business Model",
          "SPEECHABSTRACT":"",
          "TEXTIMG":"assets/img/speaker/celeste-mangani.jpeg",
          "TEXTTITLE":"Celeste Mangani",
          "COMPANY":"QXIP",
          "DESC":"",
          "TWITTER":"https://twitter.com/@lightbluen",
-         "POSITION":"Program Manager"
+         "POSITION":"CFO"
       },
       {
          "NAME":"Nitzan Gutman",
@@ -263,6 +263,17 @@ const summitData = {
          "DESC":"",
          "TWITTER":"",
          "POSITION":"Senior Developer"
+      },
+      {
+         "NAME":"Francesco Piccinin",
+         "SPEECHTITLE":"VOIP solutions for the Public Amministration of the north-east Italy",
+         "SPEECHABSTRACT":"self made solution for 50+ districts using opensips/freeswitch/mysql/nginx/web2py. 3000+ clients using it now, fast growing. Model/View/Controller written in python for phone provisioning and all the configurations aspects Graphic rappresentation of the resulting configuration for every department",
+         "TEXTIMG":"assets/img/speaker/frances-piccinin.jpg",
+         "TEXTTITLE":"Francesco Piccinin",
+         "COMPANY":"Insiel S.p.A.",
+         "DESC":"",
+         "TWITTER":"twitter.com",
+         "POSITION":""
       },
 
    ],
