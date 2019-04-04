@@ -337,6 +337,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	 </div>
     </div>`);
 
+document.getElementById('presentations').appendChild(html`  
+   <div id="accordion4">   
+         ${summitData.SPEAKERS.map(item => html`  
+                <div class="card">
+                    <div id="heading${item.NAME}">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse${item.NAME}">
+                        <div class="images-box">
+                          <img class="img-fluid" src="${item.TEXTIMG}" alt="${item.NAME}">
+                        </div>                    
+                        <h4 class="name"> ${item.NAME} </h4>
+                        <h5 class="name">${item.SPEECHTITLE}</h5>
+                      </div>
+                    </div>
+	            <div id="collapse${item.TEXTIMG}" class="collapse" aria-labelledby="heading${item.NAME}" data-parent="#accordion4">
+                      <div class="card-body">
+                        <p>${item.SPEECHABSTRACT}</p> 
+		      </div>
+		    </div>
+		</div>
+         `)}
+    </div>`);	
+	
 /*
    // Dynamic Tabs
    document.getElementById('myTabDynamic').appendChild(html`  
