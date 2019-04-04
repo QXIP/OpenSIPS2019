@@ -332,6 +332,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // Append to Document element id `speakers`
 document.addEventListener("DOMContentLoaded", function(event) { 
    //do work	
+    const {render, html, svg} = lighterhtml;
     document.getElementById('presentations').appendChild(html`  
 	   <div id="accordion4">   
 		 ${summitData.SPEAKERS.map(items => html`  
