@@ -307,6 +307,8 @@ const summitData = {
       }
     ]
  };
+
+const SPEAKERS = summitData.SPEAKERS;
   
 // Append to Document element id `speakers`
 document.addEventListener("DOMContentLoaded", function(event) { 
@@ -344,11 +346,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // Append to Document element id `speakers`
 document.addEventListener("DOMContentLoaded", function(event) { 
    //do work	
-    var data = summitData;
+    var SPEAKERS = SPEAKERS;
     const {render, html, svg} = lighterhtml;
     document.getElementById('presentations').appendChild(html`  
 	   <div id="accordion4">   
-		 ${data.SPEAKERS.map(items => html`  
+		 ${SPEAKERS.map(items => html`  
 			<div class="card">
 			    <div id="heading${items.NAME}">
 			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse${items.NAME}">
