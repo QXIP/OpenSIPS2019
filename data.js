@@ -286,31 +286,31 @@ const summitData = {
           { "time": "8:30-9:30", 
             "description": "Registration & Breakfast", 
             "subtitle": "Venue Front-Desk", 
-            "icon": "assets/images/lunch.png",
+            "icon": "assets/img/logo.png",
 	    "id": 1
 	  },
           { "time": "9:30-13:00", 
             "description": "First Conference Day", 
             "subtitle": "Speakers TBA", 
-            "icon": "assets/images/speaker.png",
+            "icon": "assets/img/logo.png",
 	    "id": 2
 	  },
           { "time": "13:00-14:00", 
             "description": "Opensource Lunch", 
             "subtitle": "Sponsored by OpenSIPS", 
-            "icon": "assets/images/lunch.png",
+            "icon": "assets/img/logo.png",
 	    "id": 3
 	  },
           { "time": "14:00-17:00", 
             "description": "Conference Day", 
             "subtitle": "Speakers TBA", 
-            "icon": "assets/images/speaker.png",
+            "icon": "assets/img/logo.png",
 	    "id": 4
 	  },
           { "time": "17:00-18:00", 
             "description": "Round Tables", 
             "subtitle": "Featuring Speakers & OpenSIPS Team", 
-            "icon": "assets/images/round-table.png",
+            "icon": "assets/img/logo.png",
 	    "id": 5 
 	  }
         ] 
@@ -322,7 +322,7 @@ const summitData = {
 	  { "time": "17:00-18:00", 
             "description": "Day II of Confecence", 
             "subtitle": "Featuring Speakers & OpenSIPS Team", 
-            "icon": "assets/images/round-table.png",
+            "icon": "assets/img/logo.png",
 	    "id": 1 
 	  }
 	]
@@ -407,8 +407,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
                           <img class="img-fluid" src="{{icon}}" alt="">
                         </div>                    
                         <span class="time">{{time}}</span>
-                        <h4>{{description}}</h4>
-                        <h5 class="name">{{subtitle}}</h5>
+                        <h4>{{description}}
+				<h5 class="name">{{subtitle}}</h5>
+			</h4>
+                        
                       </div>
                     </div>
                  </div>
