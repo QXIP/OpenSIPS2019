@@ -9,7 +9,7 @@ const summitData = {
          "COMPANY":"8x8, Inc.",
          "DESC":"",
          "TWITTER":"https://twitter.com/@saghul",
-         "POSITION":""
+         "POSITION":"", "ID": 1
       },
       {
          "NAME":"Flavio Goncalves",
@@ -20,7 +20,7 @@ const summitData = {
          "COMPANY":"SipPulse",
          "DESC":"",
          "TWITTER":"https://twitter.com/@flagonc",
-         "POSITION":"CTO"
+         "POSITION":"CTO", "ID": 2
       },
        {
          "NAME":"Bruno Haas",
@@ -31,7 +31,7 @@ const summitData = {
          "COMPANY":"OrecX LLC",
          "DESC":"Prior to co-founding OrecX, Bruno successively worked as a software architect in electronic warfare, high capacity optical switches and advanced speech processing systems at Thales, Nortel and Autonomy Systems.",
          "TWITTER":"",
-         "POSITION":"Co-founder"
+         "POSITION":"Co-founder", "ID": 3
       },
       {
          "NAME":"David Duffett",
@@ -42,7 +42,7 @@ const summitData = {
          "COMPANY":"TeleSpeak",
          "DESC":"Asterisk is the most popular open source IP telephony engine in the world today. With the addition of adaptors (that come in a range of shapes and sizes) Asterisk can be connected to most legacy PSTN interfaces like PRI, BRI, and FXO connections in addition to IP telephony protocols SIP and IAX2, which are natively supported.",
          "TWITTER":"https://twitter.com/@dduffett",
-         "POSITION":""
+         "POSITION":"", "ID": 4
       },
       {
          "NAME":"Razvan Crainea",
@@ -53,7 +53,7 @@ const summitData = {
          "COMPANY":"OpenSIPS Solutions",
          "DESC":"Open-source hacker, one of the core developers of the OpenSIPS project since 2010.",
          "TWITTER":"https://twitter.com/@razvancrainea",
-         "POSITION":""
+         "POSITION":"", "ID": 5
       },
       {
          "NAME":"Marvi Benedet",
@@ -64,7 +64,7 @@ const summitData = {
          "COMPANY":"Insiel S.p.A.",
          "DESC":"46 years old, electronic eng. working in Insiel since 2002. Involved in VoIP in the last 4 years in a little but very efficent working group. Very interested in evolutions of telephony.",
          "TWITTER":"twitter.com",
-         "POSITION":""
+         "POSITION":"", "ID": 6
       },
        {
          "NAME":"Liviu Chircu",
@@ -75,7 +75,7 @@ const summitData = {
          "COMPANY":"OpenSIPS Solutions",
          "DESC":"",
          "TWITTER":"twitter.com/@liviuchircu",
-         "POSITION":""
+         "POSITION":"", "ID": 7
       },
       {
          "NAME":"Bogdan-Andrei Iancu",
@@ -86,7 +86,7 @@ const summitData = {
          "COMPANY":"OpenSIPS Project",
          "DESC":"Bogdan is the OpenSIPS project founder with an experience of 15+ year in the SIP world. Practicing the symbioses between managing the Open Source project and building commercial products around OpenSIPS, gives the best results in producing a viable SIP Server software for the real-life needs.",
          "TWITTER":"https://twitter.com/@bogdan_iancu",
-         "POSITION":"Founder"
+         "POSITION":"Founder", "ID": 8
       },
       {
          "NAME":"Lorenzo Mangani",
@@ -97,7 +97,7 @@ const summitData = {
          "COMPANY":"QXIP",
          "DESC":"",
          "TWITTER":"https://twitter.com/@qxip",
-         "POSITION":""
+         "POSITION":"", "ID": 9
       },
       {
          "NAME":"Dan Christian Bogos",
@@ -108,7 +108,7 @@ const summitData = {
          "COMPANY":"ITsysCOM GmbH",
          "DESC":"He is the founder of ITsysCOM, experienced communications architect and VoIP specialist. Dan is a double graduate of Politechnica University, Timisoara, with post-graduate specialization in Communication Protocols and Software Development. A frequent and well-known contributor to the Open Source community, most noticeably being the co-founder of CGRateS Project, Dan is a firm believer in merging the very best production-ready software to create high-quality, scalable and cost-effective communications solutions.",
          "TWITTER":"https://twitter.com/@danbogos",
-         "POSITION":"Founder"
+         "POSITION":"Founder", "ID": 10
       },
       {
          "NAME":"Nitish Mahajan",
@@ -119,7 +119,7 @@ const summitData = {
          "COMPANY":"Panjab University, Chandigarh, India.",
          "DESC":"",
          "TWITTER":"https://twitter.com/",
-         "POSITION":""
+         "POSITION":"", "ID": 11
       },
       {
          "NAME":"Pete Kelly",
@@ -130,7 +130,7 @@ const summitData = {
          "COMPANY":"SourceVox",
          "DESC":"",
          "TWITTER":"https://twitter.com/@p3k4y",
-         "POSITION":""
+         "POSITION":"", "ID": 12
       },
       {
          "NAME":"Maxim Sobolev",
@@ -141,7 +141,7 @@ const summitData = {
          "COMPANY":"Sippy Software, Inc.",
          "DESC":"Long term OpenSIPS contributor, open source aficionado. Author and maintainer of few open source projects.",
          "TWITTER":"https://twitter.com/@sobomax",
-         "POSITION":""
+         "POSITION":"", "ID": 13
       },
       {
          "NAME":"Giovanni Maruzzelli",
@@ -152,7 +152,7 @@ const summitData = {
          "COMPANY":"OpenTelecom.IT",
          "DESC":"Giovanni Maruzzelli (OpenTelecom.IT) is heavily engaged with FreeSWITCH, of which he wrote the interface with Skype and with cellular phones. He's a consultant for the Telco sector, developing software and training courses for FreeSWITCH, SIP, WebRTC, Kamailio and OpenSIPS. An Internet tech pioneer, in 1996 Giovanni was cofounder of Italia Online, the most popular Italian portal and consumer ISP, and architect of its Internet technologies - www.italiaonline.it Then supervisor of Internet operations and architect of the first engine for paid access to www.ilsole24ore.com , the most read financial newspaper in Italy and to its databases (migrated from mainframe). After that, he was CEO of venture capital funded Matrice, developing Telemail unified messaging and multi language phone access to email (Text To Speech), and CTO of incubator funded Open4, an open source managed applications provider. Then he was for two years in Serbia as Internet and Telecommunication Investment Expert for World Bank - IFC. Since 2005 he's based in Italy, and serves ICT and Telco companies worldwide.",
          "TWITTER":"https://twitter.com/@gmaruzz",
-         "POSITION":""
+         "POSITION":"", "ID": 14
       },
       {
          "NAME":"Lorenzo Miniero",
@@ -163,7 +163,7 @@ const summitData = {
          "COMPANY":"Meetecho",
          "DESC":"Lorenzo Miniero is the chairman and co-founder of Meetecho, a company providing consulting services on everything related to real-time multimedia, while also regularly providing streaming and remote participation services for well known events around the world (e.g., IETF and ACM). Lorenzo received his degree and Ph.D. at the Computer Science Department of the University of Napoli Federico II, where he started working on multimedia conferencing and met the colleagues with whom he co-founded Meetecho as an academic spin-off. He is an active contributor to the Internet Engineering Task Force (IETF) standardization activities, especially in the framework of real-time multimedia applications. He is most known as the author of the Janus WebRTC Server, an open source WebRTC server-side implementation.",
          "TWITTER":"https://twitter.com/@elminiero",
-         "POSITION":"Chairman"
+         "POSITION":"Chairman", "ID": 15
       },
       {
          "NAME":"John Quick",
@@ -174,7 +174,7 @@ const summitData = {
          "COMPANY":"Smartvox Limited",
          "DESC":"A lifelong programmer; working in telecoms for more than 25 years; working with OpenSIPS more than 12 years. I set up my own consulting company, based in the UK, back in 2004 and have worked with clients in many parts of the world.",
          "TWITTER":"https://twitter.com/@Astragnome",
-         "POSITION":""
+         "POSITION":"", "ID": 16
       },
       {
          "NAME":"Oleg Agafonov",
@@ -185,7 +185,7 @@ const summitData = {
          "COMPANY":"SIP3.IO",
          "DESC":"CTO and Co-founder at [SIP3](https://sip3.io) - RTC and VoIP traffic monitoring & analysis",
          "TWITTER":"https://twitter.com/@agaf0x",
-         "POSITION":"CTO"
+         "POSITION":"CTO", "ID": 17
       },
       {
          "NAME":"Ruben Homs",
@@ -196,7 +196,7 @@ const summitData = {
          "COMPANY":"VoIPGRID",
          "DESC":"",
          "TWITTER":"https://twitter.com/",
-         "POSITION":""
+         "POSITION":"", "ID": 18
       },
       {
          "NAME":"Vasilios Tzanoudakis",
@@ -207,7 +207,7 @@ const summitData = {
          "COMPANY":"VOICELAND P.C.",
          "DESC":"",
          "TWITTER":"https://twitter.com/@vtzan",
-         "POSITION":"Technology Director & Co-Founder"
+         "POSITION":"Technology Director & Co-Founder", "ID": 19
       },
       {
          "NAME":"Ameed Jamous",
@@ -218,7 +218,7 @@ const summitData = {
          "COMPANY":"TelecomsXChange",
          "DESC":"Telecom Entrepreneur, Founder and CTO @ Telecomsxchange Platform. Partner and Tech Evangelist @TeleStax The Restcomm Company.",
          "TWITTER":"https://twitter.com/@ameedjamous",
-         "POSITION":"CTO"
+         "POSITION":"CTO", "ID": 20
       },
       {
          "NAME":"Celeste Mangani",
@@ -229,7 +229,7 @@ const summitData = {
          "COMPANY":"QXIP",
          "DESC":"",
          "TWITTER":"https://twitter.com/@lightbluen",
-         "POSITION":"CFO"
+         "POSITION":"CFO", "ID": 21
       },
       {
          "NAME":"Nitzan Gutman",
@@ -240,7 +240,7 @@ const summitData = {
          "COMPANY":"Voicenter Ltd",
          "DESC":"",
          "TWITTER":"https://twitter.com/@VoicenterCloud",
-         "POSITION":"CEO"
+         "POSITION":"CEO", "ID": 22
       },
       {
          "NAME":"Michael Mavroudis",
@@ -251,7 +251,7 @@ const summitData = {
          "COMPANY":"FreeSWITCH",
          "DESC":"Michael Mavroudis is the Community Liaison for the FreeSWITCH project as well as the owner of VoiceTel a VoIP provider committed to the delivery of superior quality, highly resilient, and fault tolerant IP-based telecommunications services.",
          "TWITTER":"",
-         "POSITION":""
+         "POSITION":"", "ID": 23
       },
       {
          "NAME":"Vlad Patrascu",
@@ -262,7 +262,7 @@ const summitData = {
          "COMPANY":"OpenSIPS Solutions",
          "DESC":"",
          "TWITTER":"",
-         "POSITION":"Senior Developer"
+         "POSITION":"Senior Developer", "ID": 24
       },
       {
          "NAME":"Francesco Piccinin",
@@ -273,7 +273,7 @@ const summitData = {
          "COMPANY":"Insiel S.p.A.",
          "DESC":"",
          "TWITTER":"twitter.com",
-         "POSITION":""
+         "POSITION":"", "ID": 25
       },
 
    ],
@@ -343,15 +343,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		 {{#.}}
 			<div class="card">
 			    <div id="heading{{NAME}}">
-			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse{{TEXTIMG}}" aria-expanded="false" aria-controls="collapse{{NAME}}">
+			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse{{TEXTIMG}}" aria-expanded="false" aria-controls="collapse{{ID}}">
 				<div class="images-box">
-				  <img class="img-fluid" src="{{TEXTIMG}}" alt="{{NAME}}">
+				  <img class="img-fluid" src="{{TEXTIMG}}" alt="{{NAME}}" style="height: 60%;">
 				</div>                    
-				<h4 class="name"> {{items.NAME}} </h4>
+				<h4 class="name">{{NAME}}</h4>
 				<h5 class="name">{{SPEECHTITLE}}</h5>
 			      </div>
 			    </div>
-			    <div id="collapse{{TEXTIMG}}" class="collapse" aria-labelledby="{{NAME}}" data-parent="#accordion5">
+			    <div id="collapse{{ID}}" class="collapse" aria-labelledby="{{NAME}}" data-parent="#accordion5">
 			      <div class="card-body">
 				<p>{{SPEECHABSTRACT}}</p> 
 			      </div>
