@@ -414,7 +414,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                  </div>
 		 {{/items}}
 	       </div>`;
-   var text_day1 = Mustache.render(template_day1, summitData.schedule);        
+   var text_day1 = Mustache.render(template_day1, summitData.schedule[0]);        
    $("#tuesday").html(text_day1);
 	
    // DAY 1
@@ -434,7 +434,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                  </div>
 		 {{/items}}
 	       </div>`;
-   var text_day2 = Mustache.render(template_day2, summitData.schedule);        
+   var text_day2 = Mustache.render(template_day2, summitData.schedule[1]);        
    $("#wednesday").html(text_day2);
 
 });   
