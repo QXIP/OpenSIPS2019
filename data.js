@@ -361,7 +361,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		   </div>`;
 			  
    var text_s = Mustache.render(template_s, summitData.SPEAKERS);        
-    $("#presentations").html(text_s);
+   $("#presentations").html(text_s);
+	
+   // Hide missing images	
+   document.addEventListener("DOMContentLoaded", function(event) {
+     document.querySelectorAll('img').forEach(function(img){
+  	img.onerror = function(){this.style.display='none';};
+     })
+   });
+
  
 });   
 
