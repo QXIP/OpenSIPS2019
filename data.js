@@ -298,7 +298,7 @@ const summitData = {
           { "time": "13:00-14:00", 
             "description": "Opensource Lunch", 
             "subtitle": "Sponsored by OpenSIPS", 
-            "icon": "assets/images/lunch.png",,
+            "icon": "assets/images/lunch.png",
 	    "id": 3
 	  },
           { "time": "14:00-17:00", 
