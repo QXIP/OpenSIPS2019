@@ -280,7 +280,7 @@ const summitData = {
    
    "schedule": [ 
       { "id": "Tuesday",
-        "text": "Some Date",
+        "text": "April 30th",
         "active": "active",
         "items": [ 
           { "time": "8:30-9:30", 
@@ -304,6 +304,21 @@ const summitData = {
             "subtitle": "Featuring Speakers & OpenSIPS Team", 
             "icon": "assets/images/round-table.png" }
         ] 
+      },
+      { "id": "Wednesday",
+        "text": "May 1st",
+        "active": "",
+        "items": []
+      },
+      { "id": "Thursday",
+        "text": "May 2nd",
+        "active": "",
+        "items": []
+      },
+      { "id": "Friday",
+        "text": "May 3rd",
+        "active": "",
+        "items": []
       }
     ]
  };
