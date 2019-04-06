@@ -415,7 +415,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                         </div>                    
                         <span class="time">{{time}}</span>
                         <h4>{{description}}
-				<h5 class="name">{{subtitle}}</h5>
+				<h5 class="name" style="margin-left: 90px;">{{subtitle}}</h5>
 			</h4>
                         
                       </div>
