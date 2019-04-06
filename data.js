@@ -286,29 +286,46 @@ const summitData = {
           { "time": "8:30-9:30", 
             "description": "Registration & Breakfast", 
             "subtitle": "Venue Front-Desk", 
-            "icon": "assets/images/lunch.png" },
+            "icon": "assets/images/lunch.png",
+	    "id": 1
+	  },
           { "time": "9:30-13:00", 
             "description": "First Conference Day", 
             "subtitle": "Speakers TBA", 
-            "icon": "assets/images/speaker.png" },
+            "icon": "assets/images/speaker.png",
+	    "id": 2
+	  },
           { "time": "13:00-14:00", 
             "description": "Opensource Lunch", 
             "subtitle": "Sponsored by OpenSIPS", 
-            "icon": "assets/images/lunch.png" },
+            "icon": "assets/images/lunch.png",,
+	    "id": 3
+	  },
           { "time": "14:00-17:00", 
             "description": "Conference Day", 
             "subtitle": "Speakers TBA", 
-            "icon": "assets/images/speaker.png" },
+            "icon": "assets/images/speaker.png",
+	    "id": 4
+	  },
           { "time": "17:00-18:00", 
             "description": "Round Tables", 
             "subtitle": "Featuring Speakers & OpenSIPS Team", 
-            "icon": "assets/images/round-table.png" }
+            "icon": "assets/images/round-table.png",
+	    "id": 5 
+	  }
         ] 
       },
       { "id": "Wednesday",
         "text": "May 1st",
         "active": "",
-        "items": []
+        "items": [
+	  { "time": "17:00-18:00", 
+            "description": "Day II of Confecence", 
+            "subtitle": "Featuring Speakers & OpenSIPS Team", 
+            "icon": "assets/images/round-table.png",
+	    "id": 1 
+	  }
+	]
       },
       { "id": "Thursday",
         "text": "May 2nd",
@@ -378,6 +395,47 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			  
    var text_s = Mustache.render(template_s, summitData.SPEAKERS);        
    $("#presentations").html(text_s);
+	
+	
+   // DAY 1
+   var template_day1 = `<div id="accordion">
+		 {{#items}}
+		   <div class="card">
+                    <div id="headingOne{{id}}">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne{{id}}" aria-expanded="false" aria-controls="collapseOne{{id}}">
+                        <div class="images-box">
+                          <img class="img-fluid" src="{{icon}}" alt="">
+                        </div>                    
+                        <span class="time">{{time}}</span>
+                        <h4>{{description}}</h4>
+                        <h5 class="name">{{subtitle}}</h5>
+                      </div>
+                    </div>
+                 </div>
+		 {{/items}}
+	       </div>`;
+   var text_day1 = Mustache.render(template_day1, summitData.schedule);        
+   $("#tuesday").html(text_day1);
+	
+   // DAY 1
+   var template_day2 = `<div id="accordion2">
+		 {{#items}}
+		   <div class="card">
+                    <div id="headingTwo{{id}}">
+                      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo{{id}}" aria-expanded="false" aria-controls="collapseTwo{{id}}">
+                        <div class="images-box">
+                          <img class="img-fluid" src="{{icon}}" alt="">
+                        </div>                    
+                        <span class="time">{{time}}</span>
+                        <h4>{{description}}</h4>
+                        <h5 class="name">{{subtitle}}</h5>
+                      </div>
+                    </div>
+                 </div>
+		 {{/items}}
+	       </div>`;
+   var text_day2 = Mustache.render(template_day2, summitData.schedule);        
+   $("#wednesday").html(text_day2);
 
 });   
 
