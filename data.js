@@ -347,9 +347,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				<div class="images-box">
 				  <img class="img-fluid" src="{{TEXTIMG}}" alt="{{NAME}}" style="height: 60%;">
 				</div>                    
-				<h4 class="name">{{NAME}}</h4>
+				<h5 class="name">{{NAME}}</h5>
 				<br/>
-				<h5>{{SPEECHTITLE}}</h5>
+				<h6>{{SPEECHTITLE}}</h6>
 			      </div>
 			    </div>
 			    <div id="collapseFive{{ID}}" class="collapse" aria-labelledby="headingFive{{ID}}" data-parent="#accordion5">
