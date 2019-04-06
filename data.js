@@ -309,6 +309,7 @@ const summitData = {
  };
 
 const SPEAKERS = summitData.SPEAKERS;
+const do_speakers = new Event('do_speakers');
   
 // Append to Document element id `speakers`
 document.addEventListener("DOMContentLoaded", function(event) { 
@@ -341,10 +342,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		 </div>
 	 </div>
     </div>`);
+    document.dispatchEvent(do_speakers);
 });
 
 // Append to Document element id `speakers`
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("do_speakers", function(event) { 
    //do work	
     var data = SPEAKERS;
     const {render, html, svg} = lighterhtml;
