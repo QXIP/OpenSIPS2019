@@ -346,11 +346,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // Append to Document element id `speakers`
 document.addEventListener("DOMContentLoaded", function(event) { 
    //do work	
-    var SPEAKERS = SPEAKERS;
+    var data = SPEAKERS;
     const {render, html, svg} = lighterhtml;
     document.getElementById('presentations').appendChild(html`  
 	   <div id="accordion4">   
-		 ${SPEAKERS.map(items => html`  
+		 ${data.map(items => html`  
 			<div class="card">
 			    <div id="heading${items.NAME}">
 			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse${items.NAME}">
