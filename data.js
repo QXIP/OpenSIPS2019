@@ -348,11 +348,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // Append to Document element id `speakers`
 document.addEventListener("do_speakers", function(event) { 
 	
-   var template = '<div id="accordion4">   
+   var template = `<div id="accordion4">   
 		 {{#.}}
 			<div class="card">
 			    <div id="heading{{NAME}}">
-			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse${items.NAME}">
+			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse{{NAME}}">
 				<div class="images-box">
 				  <img class="img-fluid" src="{{TEXTIMG}}" alt="{{NAME}}">
 				</div>                    
@@ -367,7 +367,7 @@ document.addEventListener("do_speakers", function(event) {
 			    </div>
 			</div>
 		   {{/.}}
-		   </div>';
+		   </div>`;
 			  
    var text = Mustache.render(template, summitData.SPEAKERS);        
     $("#presentations").html(text);
