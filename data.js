@@ -349,7 +349,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				</div>                    
 				<h4 class="name">
 					{{NAME}}<br/>
-					{{SPEECHTITLE}}
+					<h5>{{SPEECHTITLE}}</h5>
 				</h4>
 			      </div>
 			    </div>
