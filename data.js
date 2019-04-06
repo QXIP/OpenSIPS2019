@@ -342,8 +342,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
    var template_s = `<div id="accordion5">   
 		 {{#.}}
 			<div class="card">
-			    <div id="heading{{NAME}}">
-			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse{{TEXTIMG}}" aria-expanded="false" aria-controls="collapse{{ID}}">
+			    <div id="headingFive{{ID}}">
+			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFive{{TEXTIMG}}" aria-expanded="false" aria-controls="collapseFive{{ID}}">
 				<div class="images-box">
 				  <img class="img-fluid" src="{{TEXTIMG}}" alt="{{NAME}}" style="height: 60%;">
 				</div>                    
@@ -351,7 +351,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				<h5 class="name">{{SPEECHTITLE}}</h5>
 			      </div>
 			    </div>
-			    <div id="collapse{{ID}}" class="collapse" aria-labelledby="{{NAME}}" data-parent="#accordion5">
+			    <div id="collapseFive{{ID}}" class="collapse" aria-labelledby="headingFive{{ID}}" data-parent="#accordion5">
 			      <div class="card-body">
 				<p>{{SPEECHABSTRACT}}</p> 
 			      </div>
