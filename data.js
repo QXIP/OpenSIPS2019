@@ -339,11 +339,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var text = Mustache.render(template, summitData);        
     $("#team").html(text);
    
-   var template_s = `<div id="accordion4">   
+   var template_s = `<div id="accordion5">   
 		 {{#.}}
 			<div class="card">
 			    <div id="heading{{NAME}}">
-			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse{{NAME}}">
+			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapse{{TEXTIMG}}" aria-expanded="false" aria-controls="collapse{{NAME}}">
 				<div class="images-box">
 				  <img class="img-fluid" src="{{TEXTIMG}}" alt="{{NAME}}">
 				</div>                    
@@ -351,7 +351,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				<h5 class="name">{{SPEECHTITLE}}</h5>
 			      </div>
 			    </div>
-			    <div id="collapse{{TEXTIMG}}" class="collapse" aria-labelledby="{{NAME}}" data-parent="#accordion4">
+			    <div id="collapse{{TEXTIMG}}" class="collapse" aria-labelledby="{{NAME}}" data-parent="#accordion5">
 			      <div class="card-body">
 				<p>{{SPEECHABSTRACT}}</p> 
 			      </div>
