@@ -36,7 +36,7 @@ const summitData = {
       {
          "NAME":"David Duffett",
          "SPEECHTITLE":"Why Nerds Aren't Heard: How do Geeks sabotage their own presentations - and how to avoid these pitfalls",
-         "SPEECHABSTRACT":"",
+         "SPEECHABSTRACT":"Attend this session to hear the latest news from the Asterisk and FreePBX projects directly from Digium/Sangoma!",
          "TEXTIMG":"https://secure.gravatar.com/avatar/c104436f064ea8d6eeb3038bf0127c1a?s=500",
          "TEXTTITLE":"",
          "COMPANY":"TeleSpeak",
