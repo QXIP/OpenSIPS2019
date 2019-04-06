@@ -343,7 +343,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		 {{#.}}
 			<div class="card">
 			    <div id="headingFive{{ID}}">
-			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFive{{TEXTIMG}}" aria-expanded="false" aria-controls="collapseFive{{ID}}">
+			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFive{{ID}}" aria-expanded="false" aria-controls="collapseFive{{ID}}">
 				<div class="images-box">
 				  <img class="img-fluid" src="{{TEXTIMG}}" alt="{{NAME}}" style="height: 60%;">
 				</div>                    
@@ -362,17 +362,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			  
    var text_s = Mustache.render(template_s, summitData.SPEAKERS);        
    $("#presentations").html(text_s);
-	
-   // Hide missing images	
-   document.addEventListener("DOMContentLoaded", function(event) {
+
+});   
+
+// Hide missing images	
+document.addEventListener("DOMContentLoaded", function(event) {
      document.querySelectorAll('img').forEach(function(img){
   	img.onerror = function(){this.style.display='none';};
      })
-   });
-
- 
-});   
-
+});
 
 
 
