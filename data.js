@@ -307,48 +307,39 @@ const summitData = {
       }
     ]
  };
-
-const SPEAKERS = summitData.SPEAKERS;
-const do_speakers = new Event('do_speakers');
   
 // Append to Document element id `speakers`
 document.addEventListener("DOMContentLoaded", function(event) { 
-   //do work
-   var data = summitData;
-   const {render, html, svg} = lighterhtml;
-   document.getElementById('team').appendChild(html`  
+   var template = `  
    <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="clearfix">
        				 <div class="flexslider carousel">
         				  <ul class="slides">
-               				   ${data.SPEAKERS.map(item => html`  
+               				   {{#SPEAKERS}}  
                  				  <li>
-                    				 <img src="${item.TEXTIMG}" alt="${item.NAME}" style="width:200px;height:200px;"/>
+                    				 <img src="{{TEXTIMG}}" alt="{{NAME}}" style="width:200px;height:200px;"/>
 		     				  <div class="mu-single-speakers-info">
                      				   <h4>
-                       				  ${item.NAME}
-                      				   <a href="item.TWITTER" target="_blank" tabindex="0"><i class="${item.TWITTER}"></i></a>
+                                                    {{NAME}}
+                      				    <a href="item.TWITTER" target="_blank" tabindex="0"><i class="{{TWITTER}}"></i></a>
                      				   </h4>
-						<h6 style="color: #777777">${item.COMPANY}</h6>
-		 				<p style="color: #ABCC42">${item.POSITION}</p>
+						<h6 style="color: #777777">{{COMPANY}}</h6>
+		 				<p style="color: #ABCC42">{{POSITION}}</p>
                     			 	 </div>	
                   				 </li>
-                			  `)}
+                                          {{/SPEAKERS}}
          				  </ul>
        				  </div>
      			 </div>
 		 </div>
 	 </div>
-    </div>`);
-    document.dispatchEvent(do_speakers);
-});
-
-// Append to Document element id `speakers`
-document.addEventListener("do_speakers", function(event) { 
-	
-   var template = `<div id="accordion4">   
+    </div>`;
+    var text = Mustache.render(template, summitData);        
+    $("#team").html(text);
+   
+   var template_s = `<div id="accordion4">   
 		 {{#.}}
 			<div class="card">
 			    <div id="heading{{NAME}}">
@@ -369,34 +360,9 @@ document.addEventListener("do_speakers", function(event) {
 		   {{/.}}
 		   </div>`;
 			  
-   var text = Mustache.render(template, summitData.SPEAKERS);        
-    $("#presentations").html(text);
-	
-   /*
-    var data = SPEAKERS;
-    const {render, html, svg} = lighterhtml;
-    document.getElementById('presentations').appendChild(html`  
-	   <div id="accordion4">   
-		 ${data.map(items => html`  
-			<div class="card">
-			    <div id="heading${items.NAME}">
-			      <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapse${items.NAME}">
-				<div class="images-box">
-				  <img class="img-fluid" src="${items.TEXTIMG}" alt="${items.NAME}">
-				</div>                    
-				<h4 class="name"> ${items.NAME} </h4>
-				<h5 class="name">${items.SPEECHTITLE}</h5>
-			      </div>
-			    </div>
-			    <div id="collapse${items.TEXTIMG}" class="collapse" aria-labelledby="heading${items.NAME}" data-parent="#accordion4">
-			      <div class="card-body">
-				<p>${items.SPEECHABSTRACT}</p> 
-			      </div>
-			    </div>
-			</div>
-		 `)}
-    </div>`);	
-    */
+   var text_s = Mustache.render(template_s, summitData.SPEAKERS);        
+    $("#presentations").html(text_s);
+ 
 });   
 
 
