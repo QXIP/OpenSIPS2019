@@ -68,7 +68,7 @@ const summitData = {
       },
        {
          "NAME":"Liviu Chircu",
-         "SPEECHTITLE":"",
+         "SPEECHTITLE":"OpenSIPS 3.0 - a SIP DevOps's Best Friend",
          "SPEECHABSTRACT":"",
          "TEXTIMG":"http://i.imgur.com/LmSk7gI.jpg",
          "TEXTTITLE":"Liviu Chircu",
