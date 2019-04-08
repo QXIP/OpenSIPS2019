@@ -46,8 +46,8 @@ const summitData = {
       },
       {
          "NAME":"Razvan Crainea",
-         "SPEECHTITLE":"Real-Time Call Recording using OpenSIPS",
-         "SPEECHABSTRACT":"Find out how you can record your calls in real-time using OpenSIPS as a controller and different media servers alternatives as recorders.",
+         "SPEECHTITLE":"OpenSIPS 3.0 as entry point to private networks",
+         "SPEECHABSTRACT":"",
          "TEXTIMG":"http://i.imgur.com/YbMlg4m.png",
          "TEXTTITLE":"Razvan Crainea",
          "COMPANY":"OpenSIPS Solutions",
@@ -255,7 +255,7 @@ const summitData = {
       },
       {
          "NAME":"Vlad Patrascu",
-         "SPEECHTITLE":"",
+         "SPEECHTITLE":"Workshop - OpenSIPS active-backup setup by using clustering",
          "SPEECHABSTRACT":"",
          "TEXTIMG":"https://pbs.twimg.com/profile_images/966459074408787968/ZR8l--Wa_400x400.jpg",
          "TEXTTITLE":"Vlad Patrascu",
